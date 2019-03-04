@@ -69,10 +69,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 ## Write By Javad jafari 2019/03/04
-firsrt
-npm install -g create-react-app
-then 1:
-create-react-app myproject
+firsrt.
+npm install -g create-react-app.
+then 1:.
+create-react-app myproject.
 
 or 
 cd myproject(null directory)
