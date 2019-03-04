@@ -69,16 +69,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 ## Write By Javad jafari 2019/03/04
-firsrt.
-npm install -g create-react-app.
-then 1:.
-create-react-app myproject.
+firsrt.<br>
+'npm install -g create-react-app'.<br>
+then 1:.<br>
+'create-react-app myproject'.<br>
+<br>
+or <br>
+cd myproject(null directory) <br>
+'create-react-app' .<br>
 
-or 
-cd myproject(null directory)
-create-react-app .
+then <br>
+'npm start'<br>
 
-then 
-npm start
+* نام پروژه نباید حاوی حروف بزرگ باشد<br>
 
-* نام پروژه نباید حاوی حروف بزرگ باشد
+تمام
+
