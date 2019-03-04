@@ -1,13 +1,18 @@
 import React from 'react';
 
-const getYear = () => {
-  const year = new Date();
-  return year.getFullYear();
+const user = {
+    name : "javad",
+    lastname : "jagfari",
+    age :42
 }
 
 const Header = () => {
   return(
-    <div> The date is { getYear() } </div>
+    <div>  
+      <div> {user.name} </div>
+      <div> {user.lastname}</div>
+      <div> {user.age} </div>
+    </div>
   )
 } 
 export default Header;
