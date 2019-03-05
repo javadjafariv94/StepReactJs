@@ -4,6 +4,9 @@ class Car {
     }
 }
 
+// create instanse
+
 const car = new Car();
 
 car.alertBrand();
+
