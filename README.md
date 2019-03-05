@@ -84,7 +84,9 @@ then <br>
 * نام پروژه نباید حاوی حروف بزرگ باشد<br>
 
 تمام
+## Note
 
+```jsx
 class Header extends Component {
 inputChangeHandler= (myevent)=>{
 console.log("hey");
@@ -100,10 +102,11 @@ return(
 } 
 }
 export default Header;
+```
 
-
+```jsx
 <input type="Text" onChange={this.inputChangeHandler()}/>
-
+```
 this.inputChangeHandler()
 ااگر پارانتز را بیاوریم یکبار هنگام لود شدن این فانکشن اجرا خواهد شد و هی را خواهد نوشت
 
