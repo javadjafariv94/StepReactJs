@@ -5,24 +5,24 @@ import '../components/css/styles.css'
 class Header extends Component {
 
   state = {
-    keyword :'Hello'
+    keywords :'Hello'
   }
 
   inputChangeHandler= (myevent)=>{
-    console.log(myevent.target.value);
+    
     this.setState({
-      keyword : event.target.value;
-      // error setState undefine
+      keywords : myevent.target.value
+     
     })
     
   }
 
   render() {
-    console.log(this.state.keyword); 
+    console.log(this.state.keywords); 
     return(
       <header >  
         <div className="logo">  logo </div>
-        <input type="Text" onChange={(evn1)=> this.inputChangeHandler(evn1)}/>
+        <input type="Text" onChange={this.inputChangeHandler}/>
       </header>
     )
   } 
