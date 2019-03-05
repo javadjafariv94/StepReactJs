@@ -6,7 +6,7 @@ const  NewsList = (props) =>  {
     const items = props.news.map((item) => {
                 
         return( 
-            <NewsItem  item={item} />
+            <NewsItem key={item.key} item={item} />
         )
     })
     

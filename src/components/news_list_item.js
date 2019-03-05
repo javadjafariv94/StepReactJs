@@ -1,12 +1,12 @@
 import React from 'react';
 
-const NewsItem = (props) => {
+const NewsItem = ({item}) => {
 
-    console.log(props);
+    console.log({item});
     return (
         <div>
-            <h1>  {props.item.title} </h1>
-            <div> {props.item.feed}  </div>
+            <h1>  {item.title} </h1>
+            <div> {item.feed}  </div>
         </div>
     )
 }
