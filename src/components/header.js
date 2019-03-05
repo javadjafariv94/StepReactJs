@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import '../components/css/styles.css'
 
 class Header extends Component {
-  inputChangeHandler= ()=>{
-    console.log("I was chenged");
+  inputChangeHandler= (myevent)=>{
+    console.log("myevent : ", myevent);
   }
 
   render() {
