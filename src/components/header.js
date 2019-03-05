@@ -8,11 +8,11 @@ class Header extends Component {
     keywords :'Hello'
   }
 
-  inputChangeHandler (myevent){
+  inputChangeHandler= (myevent)=>{
     
     this.setState({
       keywords : myevent.target.value
-      //error setState in function not arrow function
+     
     })
     
   }
@@ -22,8 +22,7 @@ class Header extends Component {
     return(
       <header >  
         <div className="logo">  logo </div>
-         {/* fix by bind */}
-        <input type="Text" onChange={this.inputChangeHandler.bind(this)}/>
+        <input type="Text" onChange={this.inputChangeHandler}/>
       </header>
     )
   } 
