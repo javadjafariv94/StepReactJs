@@ -5,8 +5,7 @@ import '../components/css/styles.css'
 class Header extends Component {
 
   state = {
-    title : 'The keyword is : ' ,
-    keywords :''
+     keywords :''
   }
 
   inputChangeHandler= (myevent)=>{
@@ -19,14 +18,12 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.state.keywords); 
+   
     return(
       <header >  
         <div className="logo">  logo </div>
         <input type="Text" onChange={this.inputChangeHandler}/>
-        <div>{this.state.title}</div>
-        <div>{this.state.keywords}</div>
-
+        
       </header>
     )
   } 
