@@ -1,21 +1,9 @@
 import React, {Component} from 'react';
 import '../components/css/styles.css'
- 
-function one(name){
-   console.log(name);
- }
-
- function two(name){
-   one(name);
- }
-
- two('javad');
-
 
 class Header extends Component {
   inputChangeHandler= (myevent)=>{
     console.log(myevent.target.value);
-    
   }
 
   render() {
@@ -23,7 +11,7 @@ class Header extends Component {
     return(
       <header >  
         <div className="logo">  logo </div>
-        <input type="Text" onChange={(evn1)=> this.inputChangeHandler(evn1)}/>
+        <input type="Text" onChange={(e1)=> this.inputChangeHandler(e1)}/>
       </header>
     )
   } 
