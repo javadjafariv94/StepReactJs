@@ -1,8 +1,17 @@
 import React from 'react';
 
-const  NewsList = () =>  {
+const  NewsList = (props) =>  {
+    console.log("News list (props) : ",props);
+    console.log("News list (props.okey) : ",props.okey);
+    console.log("News list (props.news) : ",props.news);
+    
+    
     return(
-        <div>News List </div>
+        <div>
+            <div>News List </div>
+            <div>{props.okey}</div>
+            {/* <div>{props.news}</div> */} // Error 
+        </div>
         )
 }
 

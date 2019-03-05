@@ -5,12 +5,17 @@ import JSON from './db.json';
 import NewsList from './components/news_list';
 class App extends React.Component {
 
+  state = {
+    news :JSON
+  }
+
   render() {
     console.log(JSON);
+    console.log(this.state.news);
   return( 
     <div >
       <Header/>
-      <NewsList/>
+      <NewsList news={this.state.news} okey="yes"/> 
     </div>
     )
   }   
