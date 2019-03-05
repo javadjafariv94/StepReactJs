@@ -1,12 +1,14 @@
 class Car {
-    alertBrand(){
-        console.log("Ford")
+  constructor(){
+     this.wheels = 4;
+     this.type = 'Hatchback'
     }
+}    
+
+class Ford extends Car {
+ 
 }
+//inherit
+const ford = new Ford();
 
-// create instanse
-
-const car = new Car();
-
-car.alertBrand();
-
+console.log(ford.wheels);
