@@ -112,5 +112,26 @@ this.inputChangeHandler()
 
 this.inputChangeHandler
 ولی در این صورت هنگام تغییر اینپوت اجرا میشود و هی را می نویسد
+ 
+ ```jsx
+ import React, {Component} from 'react';
+import '../components/css/styles.css'
 
+class Header extends Component {
+  inputChangeHandler= (myevent)=>{
+    console.log("myevent : ", myevent);
+  }
+
+  render() {
+      
+    return(
+      <header >  
+        <div className="logo">  logo </div>
+        <input type="Text" onChange={this.inputChangeHandler}/>
+      </header>
+    )
+  } 
+}
+export default Header;
+```
 
