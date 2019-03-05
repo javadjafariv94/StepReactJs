@@ -85,3 +85,29 @@ then <br>
 
 تمام
 
+class Header extends Component {
+inputChangeHandler= (myevent)=>{
+console.log("hey");
+}
+
+render() {
+return(
+<header > 
+<div className="logo"> logo </div>
+<input type="Text" onChange={this.inputChangeHandler}/>
+</header>
+)
+} 
+}
+export default Header;
+
+
+<input type="Text" onChange={this.inputChangeHandler()}/>
+
+this.inputChangeHandler()
+ااگر پارانتز را بیاوریم یکبار هنگام لود شدن این فانکشن اجرا خواهد شد و هی را خواهد نوشت
+
+this.inputChangeHandler
+ولی در این صورت هنگام تغییر اینپوت اجرا میشود و هی را می نویسد
+
+
