@@ -3,7 +3,7 @@ import '../components/css/styles.css'
 
 class Header extends Component {
   inputChangeHandler= (myevent)=>{
-    console.log("myevent : ", myevent);
+    console.log("myevent : ", myevent.target.value);
   }
 
   render() {
