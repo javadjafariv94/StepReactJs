@@ -6,7 +6,9 @@ class Header extends Component {
       
     return(
       <header >  
-        <div className="logo" >  logo </div>
+        <div className="logo"
+          onClick={()=>console.log("I was clicked")}
+        >  logo </div>
         <input type="Text"/>
       </header>
     )
