@@ -3,7 +3,8 @@ import '../components/css/styles.css'
 
 class Header extends Component {
   inputChangeHandler= (myevent)=>{
-    console.log("myevent : ", myevent.target.value);
+    console.log(myevent.target.value);
+    
   }
 
   render() {
@@ -11,7 +12,7 @@ class Header extends Component {
     return(
       <header >  
         <div className="logo">  logo </div>
-        <input type="Text" onChange={this.inputChangeHandler}/>
+        <input type="Text" onChange={(evn1)=> this.inputChangeHandler(evn1)}/>
       </header>
     )
   } 
