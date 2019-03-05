@@ -15,6 +15,6 @@ class Ford extends Car {
 //inherit
 const ford = new Ford();
 
-console.log(ford.wheels);
+//console.log(ford.wheels);
 
-console.log(ford.windowsCar);
+//console.log(ford.windowsCar);

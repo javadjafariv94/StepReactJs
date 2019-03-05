@@ -1,25 +1,20 @@
 import React, {Component} from 'react';
 import '../components/css/styles.css'
  
-function one(name){
-   console.log(name);
- }
-
- function two(name){
-   one(name);
- }
-
- two('javad');
-
 
 class Header extends Component {
+
+  state = {
+    keyword :'Hello'
+  }
+
   inputChangeHandler= (myevent)=>{
     console.log(myevent.target.value);
     
   }
 
   render() {
-      
+    console.log(this.state.keyword); 
     return(
       <header >  
         <div className="logo">  logo </div>
