@@ -178,4 +178,21 @@ class Header extends Component {
 }
 export default Header;
 ```
+```jsx
+import React, {Component} from 'react';
+import '../components/css/styles.css'
+ 
+function one(name){
+   console.log(name);
+ }
 
+ function two(name){
+   one(name);
+ }
+
+ two('javad');
+
+
+class Header extends Component {
+//--------------------------
+```
