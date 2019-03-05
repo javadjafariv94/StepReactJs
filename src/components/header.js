@@ -10,6 +10,10 @@ class Header extends Component {
 
   inputChangeHandler= (myevent)=>{
     console.log(myevent.target.value);
+    this.setState({
+      keyword : event.target.value;
+      // error setState undefine
+    })
     
   }
 
