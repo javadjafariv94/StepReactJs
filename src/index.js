@@ -3,26 +3,23 @@ import ReactDOM from 'react-dom';
 import Header from './components/header';
 import JSON from './db.json';
 import NewsList from './components/news_list';
-class App extends React.Component {
 
+class App extends React.Component {
   state = {
-    news :JSON
+    news : JSON
   }
 
-  render() {
-    console.log(JSON);
-    console.log(this.state.news);
-  return( 
-    <div >
-      <Header/>
-      <NewsList news={this.state.news} okey="Please Read :"> 
-      <h3>
-         The News are :
-      </h3>
-      </NewsList>
-    </div>
-    )
-  }   
-}   
+  render(){
+    return(
+      <div>
+        <Header />
+        <NewsList news={this.state.news} >
+          The News are :
+        </NewsList>
+      </div>
+      )
+
+  }
+}
 
 ReactDOM.render(<App/>,document.querySelector("#root")); 

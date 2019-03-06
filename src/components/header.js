@@ -4,28 +4,24 @@ import '../components/css/styles.css'
 
 class Header extends Component {
 
-  state = {
-     keywords :''
+  state={
+    keywords : ''
   }
 
-  inputChangeHandler= (myevent)=>{
-    
+  inputChangeHandler= (event) =>{
     this.setState({
-      keywords : myevent.target.value
-     
+      keywords : event.target.value
     })
-    
-  }
-
-  render() {
-   
-    return(
-      <header >  
-        <div className="logo">  logo </div>
-        <input type="Text" onChange={this.inputChangeHandler}/>
-        
-      </header>
-    )
   } 
+  
+  render(){
+    return(
+    <header >
+      <div className="logo"> LOGU </div>
+      <input type="Text" onChange={this.inputChangeHandler}/>
+      <div>{this.state.keywords}</div>    
+    </header>  
+    )
+  }
 }
 export default Header;
