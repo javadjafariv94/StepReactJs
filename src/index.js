@@ -15,7 +15,11 @@ class App extends React.Component {
   return( 
     <div >
       <Header/>
-      <NewsList news={this.state.news} okey="yes"/> 
+      <NewsList news={this.state.news} okey="Please Read :"> 
+      <h3>
+         The News are :
+      </h3>
+      </NewsList>
     </div>
     )
   }   
